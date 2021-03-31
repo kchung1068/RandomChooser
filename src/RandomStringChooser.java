@@ -16,7 +16,8 @@ public class RandomStringChooser {
      String toReturn = "";
      int randomNumber = (int)(Math.random() * list.length);
 
-         while ( !(strings[randomNumber].equals("NONE"))) {
+         if ( !(list[randomNumber].equals("NONE"))) {
+
           toReturn = strings[randomNumber];
           strings[randomNumber] = "NONE";
           return toReturn;
