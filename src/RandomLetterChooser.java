@@ -5,7 +5,8 @@ public class RandomLetterChooser extends RandomStringChooser
      */
     public RandomLetterChooser(String str)
     {
-        //YOUR CODE HERE
+
+        super(getSingleLetters(str));
     }
 
     /** Returns an array of single-letter strings.
